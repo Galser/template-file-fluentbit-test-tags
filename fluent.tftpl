@@ -1,0 +1,7 @@
+"log_forwarding_enabled": {
+"value": "1"
+},
+"log_forwarding_config": {
+"value":"\n[OUTPUT]\n Name s3\n Match *\n bucket ${dcio}-${application_name}-int-${environment}-server-data\n region us-east-1\n total_file_size 10M\n s3_key_format /$TAG/%Y/%m/%d/%H/%M/%S/$UUID.gz"
+},
+
